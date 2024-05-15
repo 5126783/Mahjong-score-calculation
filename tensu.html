@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>麻雀点数計算機</title>
+</head>
+<body>
+  <h1>麻雀点数計算機</h1>
+  <label for="han">翻数:</label>
+  <input type="number" id="han" name="han">
+  <label for="fu">符数:</label>
+  <input type="number" id="fu" name="fu">
+  <label for="honba">一本場:</label>
+  <input type="number" id="honba" name="honba" value="0">
+
+  <div>
+    <button onclick="calculateScore(true)">親の点数計算</button>
+    <button onclick="calculateScore(false)">子の点数計算</button>
+  </div>
+
+  <p id="result"></p>
+
+  <script src="fresh.js"></script>
+</body>
+</html>
